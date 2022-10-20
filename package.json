@@ -2,7 +2,7 @@
   "name": "coheza-ui",
   "private": false,
   "version": "1.0.2",
-  "type": "module",
+  "prepublish": "tsc",
   "files": [
     "dist",
     "LICENSE",
