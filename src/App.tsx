@@ -1,4 +1,4 @@
-import { Button } from "./components/Button";
+import Button from "./components/Button";
 import { FaPlus, FaUserAlt } from "react-icons/fa";
 import "./styles/global.css";
 import { TextField } from "./components/Input";

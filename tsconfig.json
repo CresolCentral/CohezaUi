@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.tsx"],
+  "include": ["src"],
   "exclude": [
     "dist",
     "node_modules",

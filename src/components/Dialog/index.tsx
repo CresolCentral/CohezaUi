@@ -1,6 +1,6 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import clsx from "clsx";
-import { Button } from "../Button";
+import Button from "../Button";
 import { Heading } from "../Heading";
 import { Text } from "../Text";
 import { IoClose } from "react-icons/io5";
