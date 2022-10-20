@@ -20,7 +20,7 @@ function AlertRoot({
 }: AlertProps) {
   return (
     <div
-      className={clsx("flex flex-row items-start justify-between rounded-sm", {
+      className={clsx("flex flex-row w-full items-start justify-between rounded-sm", {
         "py-1 px-2 text-xs": size === "xs",
         "py-2 px-2 text-[0.875rem]": size === "sm",
         "py-3 px-2 text-md": size === "md",

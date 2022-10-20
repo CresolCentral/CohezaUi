@@ -25,14 +25,16 @@ module.exports = {
         '100': '#E1E1E6',
         'hover': '#2D3644'
       },
-      green: {
+      primary: {
+        'contrast': '#e0e0e0',
         'hover': '#094132',
         '900': '#064E3B',
         '800': '#1E4620',
         '700': '#047857',
         '400': '#15803d'
       },
-      orange: {
+      secondary: {
+        'contrast': '#e0e0e0',
         'hover': '#854D0E',
         '700': '#A16207',
         '600': '#ca8a04'

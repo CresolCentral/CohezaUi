@@ -9,7 +9,7 @@ export interface InputRootProps {
 
 function InputRoot({ children, size='md' }: InputRootProps) {
   return (
-    <div className={clsx("flex items-center py-2 px-3 gap-3 rounded bg-gray-800 focus-within:ring-2 ring-green-900", {
+    <div className={clsx("flex items-center py-2 px-3 gap-3 rounded bg-gray-800 focus-within:ring-2 ring-primary-900", {
       "h-9 text-sm": size === "sm",
       "h-10": size === "md",
       "h-12": size === "lg"
@@ -19,7 +19,7 @@ function InputRoot({ children, size='md' }: InputRootProps) {
   );
 }
 
-InputRoot.displayName = "Input.Root";
+InputRoot.displayName = "TextField.Root";
 
 
 export interface InputIconProps {
@@ -34,7 +34,7 @@ function InputIcon({ children }: InputIconProps) {
   )
 }
 
-InputIcon.displayName = "Input.Icon";
+InputIcon.displayName = "TextField.Icon";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
@@ -42,17 +42,17 @@ function InputInput({ ...props }: InputProps) {
   return (
     <input
       className={clsx(
-        "bg-transparent flex-1 text-gray-100 text-xs placeholder:text-gray-400 outline-none"
+        "bg-transparent flex-1 text-primary-contrast text-xs placeholder:text-gray-400 outline-none"
       )}
       {...props}
     />
   );
 }
 
-InputInput.displayName = "Input";
+InputInput.displayName = "TextField.Text";
 
-export const TextInput = {
+export const TextField = {
   Root: InputRoot,
-  Input: InputInput,
+  Text: InputInput,
   Icon: InputIcon
 };

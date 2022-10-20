@@ -14,7 +14,7 @@ export function Checkbox({ size }: CheckboxProps) {
       "w-6 h-6": size === "lg",
     })}>
       <CheckboxPrimitive.Indicator asChild>
-        <FaCheck className="h-4 w-4 text-green-900" />
+        <FaCheck className="h-4 w-4 text-primary-900" />
       </CheckboxPrimitive.Indicator>
     </CheckboxPrimitive.Root>
   );

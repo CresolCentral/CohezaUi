@@ -1,16 +1,16 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { TextInput, InputRootProps } from ".";
+import { TextField, InputRootProps } from ".";
 import { FaUserAlt } from "react-icons/fa";
 
 export default {
   title: "Components/Input",
-  component: TextInput.Root,
+  component: TextField.Root,
   args: {
     children: [
-      <TextInput.Icon>
+      <TextField.Icon>
         <FaUserAlt />
-      </TextInput.Icon>,
-      <TextInput.Input placeholder="Placeholder input" />,
+      </TextField.Icon>,
+      <TextField.Text placeholder="Placeholder input" />,
     ],
     size: "md"
   },
@@ -34,7 +34,7 @@ export const Default: StoryObj<InputRootProps> = {};
 export const WithoutIcon: StoryObj<InputRootProps> = {
   args: {
     children: [
-      <TextInput.Input placeholder="Placeholder input" />,
+      <TextField.Text placeholder="Placeholder input" />,
     ],
     size: "md"
   },
