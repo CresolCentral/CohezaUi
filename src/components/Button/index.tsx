@@ -13,7 +13,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement>{
   variant?: 'solid' | 'border' | 'text'
 }
 
-export function Button({
+const Button = ({
   children,
   asChild,
   size = "md",
@@ -23,7 +23,7 @@ export function Button({
   color = 'default',
   variant = 'solid',
   ...props
-}: ButtonProps) {
+}: ButtonProps) => {
   const Component = asChild ? Slot : "button";
 
   return (
@@ -76,3 +76,5 @@ export function Button({
     </Component>
   );
 }
+
+export default Button
