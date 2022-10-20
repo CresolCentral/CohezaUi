@@ -1,10 +1,3 @@
-import { Listbox } from "@headlessui/react";
-import clsx from "clsx";
-import { useState } from "react";
-import { RiArrowDropUpLine, RiArrowDropDownLine } from "react-icons/ri";
-import { BiCheckDouble } from 'react-icons/bi'
-// import { Chip } from "../Chip";
-
 export interface SelectProps {
   size?: "sm" | "md" | "lg";
   placeholder?: string;
@@ -12,21 +5,21 @@ export interface SelectProps {
   multiple?: boolean;
 }
 
-export function Select({
-  size = "sm",
+const Select = ({
+  /*size = "sm",
   placeholder,
   fullWidth = false,
-  multiple
-}: SelectProps) {
-  const people = [
-    "Durward Reynoldsaaaaaaaaaaaaaaaaaa",
-    "Kenton Towne",
-    "Therese Wunsch",
-    "Benedict Kessler",
-    "Katelyn Rohan",
-  ];
+  multiple*/
+}: SelectProps) => {
+  // const people = [
+  //   "Durward Reynoldsaaaaaaaaaaaaaaaaaa",
+  //   "Kenton Towne",
+  //   "Therese Wunsch",
+  //   "Benedict Kessler",
+  //   "Katelyn Rohan",
+  // ];
 
-  const [itemSelected, setSelected] = useState([]);
+  // const [itemSelected, setSelected] = useState([]);
 
   return (
     <div className="">
@@ -93,3 +86,5 @@ export function Select({
     </div>
   );
 }
+
+export default Select;

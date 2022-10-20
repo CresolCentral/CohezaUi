@@ -1,11 +1,9 @@
-import { Slot } from "@radix-ui/react-slot";
 import clsx from "clsx";
 import { ReactNode } from "react";
 import { BsCheckAll } from "react-icons/bs";
 import { IoIosWarning } from "react-icons/io";
 import { FiInfo } from "react-icons/fi";
 import { RiCloseCircleLine } from "react-icons/ri";
-import { RiCloseFill } from "react-icons/ri";
 
 export interface AlertProps {
   size?: "xs" | "sm" | "md" | "lg";
@@ -82,8 +80,10 @@ function AlertMessage({ children }: AlertMessageProps) {
 
 AlertMessage.displayName = "Alert.Message";
 
-export const Alert = {
+const Alert = {
   Root: AlertRoot,
   Title: AlertTitle,
   Message: AlertMessage,
 };
+
+export default Alert;

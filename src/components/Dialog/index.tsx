@@ -1,6 +1,5 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import clsx from "clsx";
-import { useState } from "react";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
 import { Text } from "../Text";
@@ -15,14 +14,14 @@ export interface DialogProps {
   btnClose?: boolean;
 }
 
-export function Dialog({
+const Dialog = ({
   open,
   handleClose,
   size = "sm",
   title,
   description,
   btnClose = true,
-}: DialogProps) {
+}: DialogProps) => {
   return (
     <DialogPrimitive.Root open={open} onOpenChange={handleClose}>
       <DialogPrimitive.Trigger />
@@ -57,3 +56,5 @@ export function Dialog({
     </DialogPrimitive.Root>
   );
 }
+
+export default Dialog;
