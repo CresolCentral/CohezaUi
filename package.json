@@ -1,8 +1,13 @@
 {
-  "name": "cohezaui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "coheza-ui",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "yarn build:esm && yarn build:cjs",
@@ -44,7 +49,9 @@
     "vite": "^3.1.0"
   },
   "description": "Biblioteca de componentes para utilização em projetos React",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CresolCentral/CohezaUi.git"
