@@ -1,0 +1,2 @@
+import"./index.ce7d7bfb.js";import{T as t}from"./Text.c40e36a5.js";import"./index.module.0044d856.js";import"./index.a028179d.js";import"./iframe.856eaddd.js";import"./clsx.m.256e9345.js";import"./jsx-runtime.a267a26c.js";const n={title:"Components/Text",component:t,args:{children:"Lorem ipsum.",size:"md"},argTypes:{size:{options:["xs","sm","md","lg","xl"],control:{type:"inline-radio"}},asChild:{table:{disable:!0}}}},a={},l=["Default"];export{a as Default,l as __namedExportsOrder,n as default};
+//# sourceMappingURL=index.stories.84fb983c.js.map
