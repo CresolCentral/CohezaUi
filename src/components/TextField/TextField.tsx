@@ -51,8 +51,10 @@ function InputInput({ ...props }: InputProps) {
 
 InputInput.displayName = "TextField.Text";
 
-export const TextField = {
+const TextField = {
   Root: InputRoot,
   Text: InputInput,
   Icon: InputIcon
 };
+
+export default TextField;

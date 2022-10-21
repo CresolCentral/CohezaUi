@@ -1,6 +1,8 @@
+import React from 'react'
 import { Meta, StoryObj } from "@storybook/react";
-import { TextField, InputRootProps } from ".";
+import TextField from ".";
 import { FaUserAlt } from "react-icons/fa";
+import { InputRootProps } from "./TextField";
 
 export default {
   title: "Components/Input",

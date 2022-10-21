@@ -29,7 +29,7 @@ const Button = ({
   return (
     <Component
       className={clsx(
-        "flex items-center gap-2 justify-center rounded text-gray-100 font-bold transition-colors ",
+        "flex items-center gap-2 justify-center rounded font-bold transition-colors ",
         {
           "py-[2px] px-2 text-[0.82rem]": size === "xs",
           "py-1 px-2 text-[0.9rem]": size === "sm",
@@ -38,9 +38,9 @@ const Button = ({
           "w-full": fullWidth,
 
           // VARIACAO SOLID
-          "bg-primary-900 hover:bg-primary-hover": color === 'primary' && variant === 'solid',
-          "bg-secondary-700 hover:bg-secondary-hover": color === 'secondary' && variant === 'solid',
-          "bg-gray-700 hover:bg-gray-hover": color === 'default' && variant === 'solid',
+          "bg-primary-900 hover:bg-primary-hover text-primary-contrast": color === 'primary' && variant === 'solid',
+          "bg-secondary-700 hover:bg-secondary-hover text-secondary-contrast": color === 'secondary' && variant === 'solid',
+          "bg-gray-700 hover:bg-gray-hover text-white": color === 'default' && variant === 'solid',
 
           // VARIACAO BORDER
           "ring-1 ring-primary-900 text-primary-900 hover:ring-primary-hover": color === 'primary' && variant === 'border',

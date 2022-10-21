@@ -1,8 +1,8 @@
 import Button from "./components/Button";
 import { FaPlus, FaUserAlt } from "react-icons/fa";
 import "./styles/global.css";
-import { TextField } from "./components/Input";
-import Alert from "./components/Alert";
+import  TextField  from "./components/TextField";
+import Alert from "./components/Alert/Alert";
 
 export function App() {
   return (
