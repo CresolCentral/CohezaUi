@@ -11,12 +11,19 @@ export default {
     children: [
       <Alert.Message>My Message</Alert.Message>
     ],
-    type: "success"
+    type: "success",
+    align: 'left'
   },
   argTypes: {
     size: {
       options: ["xs", "sm", "md", "lg"],
       description: "Define o tamanho do alerta",
+      control: {
+        type: "inline-radio",
+      },
+    },
+    align: {
+      options: ["left", "center", "right"],
       control: {
         type: "inline-radio",
       },
@@ -59,6 +66,18 @@ export const AlertTitle: StoryObj<AlertProps> = {
 };
 
 export const AlertTitleIcon: StoryObj<AlertProps> = {
+  args: {
+    icon: true,
+    type: "success",
+    size: "sm",
+    children: [
+      <Alert.Title>Title</Alert.Title>,
+      <Alert.Message>My Message</Alert.Message>
+    ]
+  }
+};
+
+export const AlertRight: StoryObj<AlertProps> = {
   args: {
     icon: true,
     type: "success",

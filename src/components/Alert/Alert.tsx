@@ -10,6 +10,7 @@ export interface AlertProps {
   type?: "success" | "warning" | "danger" | "info";
   children: ReactNode;
   icon?: boolean;
+  align?: 'left' | 'center' | 'right';
 }
 
 function AlertRoot({
@@ -17,6 +18,7 @@ function AlertRoot({
   type = "success",
   children,
   icon = false,
+  align = 'left'
 }: AlertProps) {
   return (
     <div
@@ -30,9 +32,13 @@ function AlertRoot({
         "bg-warning-background text-warning-color": type === "warning",
         "bg-danger-background text-danger-color": type === "danger",
         "bg-info-background text-info-color": type === "info",
+        "": align === 'left',
+        "text-center": align === 'center',
+        "text-right": align === 'right'
       })}
     >
-      <div className="flex flex-row">
+      <div className={clsx("flex flex-row w-full", {
+      })}>
         <div>
           {icon && type === "success" && (
             <BsCheckAll className="text-xl mr-3" />
@@ -45,7 +51,7 @@ function AlertRoot({
           )}
           {icon && type === "info" && <FiInfo className="text-xl mr-3" />}
         </div>
-        <div>
+        <div className="w-full">
           <div className="flex flex-col">{children}</div>
         </div>
       </div>
