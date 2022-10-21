@@ -1,7 +1,6 @@
 import { clsx } from "clsx";
 import { Slot } from "@radix-ui/react-slot";
 import { InputHTMLAttributes, ReactNode } from "react";
-import Text from "../Text/Text";
 
 export interface InputRootProps {
   children: ReactNode;
@@ -12,7 +11,7 @@ export interface InputRootProps {
 function InputRoot({ children, size = "md", label }: InputRootProps) {
   return (
     <div className="flex flex-col">
-      {label && <span className="font-bold flex pb-[6px] text-[0.8rem]">{label}</span>}
+      {label && <span className="font-bold text-label flex pb-[6px] text-[0.8rem]">{label}</span>}
       <div
         className={clsx(
           "flex items-center py-2 px-3 gap-3 rounded bg-input-bg focus-within:ring-2 ring-primary-900",
