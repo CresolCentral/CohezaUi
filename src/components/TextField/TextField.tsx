@@ -11,7 +11,7 @@ export interface InputRootProps {
 
 function InputRoot({ children, size = "md", label }: InputRootProps) {
   return (
-    <div>
+    <div className="flex flex-col">
       {label && <Text className="font-bold flex pb-[6px] text-[0.8rem]">{label}</Text>}
       <div
         className={clsx(
