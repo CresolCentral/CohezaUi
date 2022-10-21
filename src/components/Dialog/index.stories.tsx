@@ -1,7 +1,9 @@
+import React from 'react'
 import { useArgs } from "@storybook/client-api";
 import { Meta, StoryObj, Story } from "@storybook/react";
-import { DialogProps, Dialog } from ".";
-import { Button } from "../Button";
+import  Dialog from ".";
+import Button from "../Button";
+import { DialogProps } from './Dialog';
 
 export default {
   title: "Overlay/Dialog",

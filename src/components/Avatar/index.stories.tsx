@@ -1,6 +1,8 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { Avatar, AvatarProps } from ".";
 import { FaSearch } from "react-icons/fa";
+import Avatar from '.'
+import { AvatarProps } from "./Avatar";
 
 export default {
   title: "Components/Avatar",

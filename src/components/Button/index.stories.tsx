@@ -1,6 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { Button, ButtonProps } from ".";
+import React from 'react'
+import { Meta, StoryObj } from "@storybook/react"
+import  Button from ".";
 import { FaPlus } from "react-icons/fa";
+import { ButtonProps } from "./Button";
 
 export default {
   title: "Components/Button",
