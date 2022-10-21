@@ -12,7 +12,7 @@ export interface InputRootProps {
 function InputRoot({ children, size = "md", label }: InputRootProps) {
   return (
     <div className="flex flex-col">
-      {label && <Text className="font-bold flex pb-[6px] text-[0.8rem]">{label}</Text>}
+      {label && <span className="font-bold flex pb-[6px] text-[0.8rem]">{label}</span>}
       <div
         className={clsx(
           "flex items-center py-2 px-3 gap-3 rounded bg-input-bg focus-within:ring-2 ring-primary-900",
