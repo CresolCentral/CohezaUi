@@ -5,7 +5,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { InputRootProps } from "./TextField";
 
 export default {
-  title: "Components/Input",
+  title: "Components/TextField",
   component: TextField.Root,
   args: {
     children: [
@@ -32,6 +32,16 @@ export default {
 } as Meta<InputRootProps>;
 
 export const Default: StoryObj<InputRootProps> = {};
+
+export const WithLabel: StoryObj<InputRootProps> = {
+  args: {
+    children: [
+      <TextField.Text placeholder="Placeholder input" />,
+    ],
+    label: 'My Label',
+    size: "md"
+  },
+};
 
 export const WithoutIcon: StoryObj<InputRootProps> = {
   args: {

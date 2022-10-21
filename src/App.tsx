@@ -7,7 +7,7 @@ import Alert from "./components/Alert/Alert";
 export function App() {
   return (
     <>
-    <div className="w-full flex bg-gray-900 p-20">
+    <div className="w-full flex bg-default-900 p-20">
       <div className="flex flex-col w-full gap-2">
         <Alert.Root size="sm" type="success">
           <Alert.Message>Success Alert</Alert.Message>
@@ -121,8 +121,8 @@ export function App() {
         </Alert.Root>
       </div>
     </div>
-    <div className="w-full flex bg-gray-900 h-screen p-10">
-      <div className="bg-gray-[#222] w-full p-10 h-screen">
+    <div className="w-full flex bg-default-900 h-screen p-10">
+      <div className="bg-default-[#222] w-full p-10 h-screen">
         <div>
           <span className="text-white">Buttons</span>
           <div className="flex gap-4">
@@ -133,7 +133,7 @@ export function App() {
               <Button size="lg">Solid</Button>
             </div>
             <div className="mt-4 flex flex-col gap-2">
-              <Button size="xs" variant="border">
+              <Button size="xs" variant="border" type="submit">
                 Border
               </Button>
               <Button size="sm" variant="border">

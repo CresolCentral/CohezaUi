@@ -8,7 +8,7 @@ export interface CheckboxProps {
 
 const Checkbox = ({ size }: CheckboxProps) => {
   return (
-    <CheckboxPrimitive.Root className={clsx("rounded p-[2px] bg-gray-800 flex justify-center items-center", {
+    <CheckboxPrimitive.Root className={clsx("rounded p-[2px] bg-default-800 flex justify-center items-center", {
       "w-[15px] h-[15px]": size === "sm",
       "w-[18px] h-[18px]": size === "md",
       "w-6 h-6": size === "lg",

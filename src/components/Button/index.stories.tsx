@@ -35,7 +35,7 @@ export default {
       },
     },
     size: {
-      options: ["xs", "sm", "md", "lg"],
+      options: ["xs", "sm", "md", "lg", "xl"],
       description: "Define o tamanho do botao",
       control: {
         type: "inline-radio",

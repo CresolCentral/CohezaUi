@@ -14,8 +14,10 @@ module.exports = {
       white: '#fff',
       black: '#000',
       transparent: 'transparent',
+      'input-bg': '#202024',
+      label: '#E1E1E6',
 
-      gray: {
+      default: {
         '900': '#121214',
         '800': '#202024',
         '700': '#374151',

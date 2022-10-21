@@ -29,7 +29,7 @@ const Dialog = ({
         <DialogPrimitive.Overlay className="bg-black/90 inset-0 fixed z-10">
           <DialogPrimitive.Content
             className={clsx(
-              "fixed bg-gray-800 py-6 px-8 w-full rounded-md shadow-lg shadow-black/25  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
+              "fixed bg-default-800 py-6 px-8 w-full rounded-md shadow-lg shadow-black/25  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
               {
                 "max-w-sm": size === "xs",
                 "max-w-lg": size === "sm",
@@ -39,7 +39,7 @@ const Dialog = ({
               }
             )}
           >
-            <DialogPrimitive.Title className="text-gray-100 flex flex-col">
+            <DialogPrimitive.Title className="text-default-100 flex flex-col">
               <Heading size="sm">{title}</Heading>
               <Text size="sm">{description}</Text>
               <footer className="flex justify-end">

@@ -26,7 +26,7 @@ const Select = ({
       {/*<Listbox value={itemSelected} onChange={setSelected} multiple={multiple}>
         <Listbox.Button
           className={clsx(
-            "flex justify-between items-center rounded min-w-[15rem] py-2 px-2 w-full bg-gray-800 focus-within:ring-2 ring-green-900",
+            "flex justify-between items-center rounded min-w-[15rem] py-2 px-2 w-full bg-default-800 focus-within:ring-2 ring-green-900",
             {
               "h-9": size === "sm",
               "h-10": size === "md",
@@ -47,11 +47,11 @@ const Select = ({
                ))}
                </div>
             :
-            <span className="text-gray-100">{itemSelected}</span>
+            <span className="text-default-100">{itemSelected}</span>
             }
             </>
           ) : (
-            <span className="text-gray-400">{placeholder}</span>
+            <span className="text-default-400">{placeholder}</span>
           )}
           <span className="flex flex-col text-black pl-2">
             <RiArrowDropUpLine />
@@ -59,7 +59,7 @@ const Select = ({
           </span>
         </Listbox.Button>
         <Listbox.Options
-          className={clsx("bg-gray-800 mt-1 rounded p-2", {
+          className={clsx("bg-default-800 mt-1 rounded p-2", {
             "max-w-md": fullWidth === false,
           })}
         >
@@ -69,9 +69,9 @@ const Select = ({
               value={person}
             >
               {({ active, selected }) => (
-                <div className={clsx("flex justify-between  items-center gap-1 rounded cursor-pointer px-2 py-1 transition-colors text-gray-100", {
-                  "bg-gray-700": selected,
-                  "bg-gray-700 text-gray-200": active
+                <div className={clsx("flex justify-between  items-center gap-1 rounded cursor-pointer px-2 py-1 transition-colors text-default-100", {
+                  "bg-default-700": selected,
+                  "bg-default-700 text-default-200": active
                 })}>
                   {person}
                   {selected && <BiCheckDouble />}

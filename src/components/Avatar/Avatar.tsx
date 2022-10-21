@@ -14,7 +14,7 @@ const Avatar = ({ urlImage, label, size = "sm", icon }: AvatarProps) => {
     return (
       <div
         className={clsx(
-          "bg-gray-400 text-gray-100 rounded-full flex items-center justify-center",
+          "bg-default-400 text-default-100 rounded-full flex items-center justify-center",
           {
             "h-10 w-10 text-lg": size === "xs",
             "h-12 w-12 text-xl": size === "sm",
@@ -49,7 +49,7 @@ const Avatar = ({ urlImage, label, size = "sm", icon }: AvatarProps) => {
   return (
     <div
       className={clsx(
-        "bg-gray-400 text-gray-100 rounded-full flex items-center justify-center",
+        "bg-default-400 text-default-100 rounded-full flex items-center justify-center",
         {
           "h-10 w-10 text-lg": size === "xs",
           "h-12 w-12 text-xl": size === "sm",

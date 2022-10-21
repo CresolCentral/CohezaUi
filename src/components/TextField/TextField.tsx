@@ -1,37 +1,42 @@
 import { clsx } from "clsx";
-import { Slot } from '@radix-ui/react-slot'
+import { Slot } from "@radix-ui/react-slot";
 import { InputHTMLAttributes, ReactNode } from "react";
+import Text from "../Text/Text";
 
 export interface InputRootProps {
   children: ReactNode;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
+  label?: string;
 }
 
-function InputRoot({ children, size='md' }: InputRootProps) {
+function InputRoot({ children, size = "md", label }: InputRootProps) {
   return (
-    <div className={clsx("flex items-center py-2 px-3 gap-3 rounded bg-gray-800 focus-within:ring-2 ring-primary-900", {
-      "h-9 text-sm": size === "sm",
-      "h-10": size === "md",
-      "h-12": size === "lg"
-    })}>
-      {children}
-    </div>
+    <>
+      {label && <Text className="font-bold flex pb-[6px] text-[0.8rem]">{label}</Text>}
+      <div
+        className={clsx(
+          "flex items-center py-2 px-3 gap-3 rounded bg-input-bg focus-within:ring-2 ring-primary-900",
+          {
+            "h-9 text-sm": size === "sm",
+            "h-10": size === "md",
+            "h-12": size === "lg",
+          }
+        )}
+      >
+        {children}
+      </div>
+    </>
   );
 }
 
 InputRoot.displayName = "TextField.Root";
 
-
 export interface InputIconProps {
-  children: ReactNode
-} 
+  children: ReactNode;
+}
 
 function InputIcon({ children }: InputIconProps) {
-  return (
-    <Slot className="w-3 h-3 text-gray-400">
-      {children}
-    </Slot>
-  )
+  return <Slot className="w-3 h-3 text-default-400">{children}</Slot>;
 }
 
 InputIcon.displayName = "TextField.Icon";
@@ -42,7 +47,7 @@ function InputInput({ ...props }: InputProps) {
   return (
     <input
       className={clsx(
-        "bg-transparent flex-1 text-primary-contrast text-xs placeholder:text-gray-400 outline-none"
+        "bg-transparent flex-1 text-primary-contrast text-xs placeholder:text-default-400 outline-none"
       )}
       {...props}
     />
@@ -54,7 +59,7 @@ InputInput.displayName = "TextField.Text";
 const TextField = {
   Root: InputRoot,
   Text: InputInput,
-  Icon: InputIcon
+  Icon: InputIcon,
 };
 
 export default TextField;
