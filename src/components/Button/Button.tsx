@@ -28,6 +28,7 @@ const Button = ({
 
   return (
     <Component
+      type="button"
       className={clsx(
         "flex items-center gap-2 justify-center rounded font-bold transition-colors ",
         {
