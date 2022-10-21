@@ -25,10 +25,12 @@ module.exports = {
         '400': '#7C7C8A',
         '200': '#C4C4CC',
         '100': '#E1E1E6',
-        'hover': '#2D3644'
+        'hover': '#2D3644',
+        'disabled': '#aaa',
       },
       primary: {
         'contrast': '#e0e0e0',
+        'disabled': '#aaa',
         'hover': '#094132',
         '900': '#064E3B',
         '800': '#1E4620',
@@ -38,6 +40,7 @@ module.exports = {
       secondary: {
         'contrast': '#e0e0e0',
         'hover': '#854D0E',
+        'disabled': '#aaa',
         '700': '#A16207',
         '600': '#ca8a04'
       },

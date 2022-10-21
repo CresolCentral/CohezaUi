@@ -11,7 +11,8 @@ export default {
     size: "sm",
     children: "Button",
     fullWidth: true,
-    color: 'primary'
+    color: 'primary',
+    disabled: false,
   },
   argTypes: {
     asChild: {
@@ -59,11 +60,18 @@ export default {
 
 export const Default: StoryObj<ButtonProps> = {};
 
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
+  }
+};
+
 export const ButtonLeftIcon: StoryObj<ButtonProps> = {
   args: {
     size: "sm",
     children: "Button",
     leftIcon: <FaPlus />,
+    disabled: false,
   },
 };
 
@@ -72,5 +80,6 @@ export const ButtonRightIcon: StoryObj<ButtonProps> = {
     size: "sm",
     children: "Button",
     rightIcon: <FaPlus />,
+    disabled: false,
   },
 };

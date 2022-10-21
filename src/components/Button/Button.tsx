@@ -40,20 +40,22 @@ const Button = ({
           "w-full": fullWidth,
 
           // VARIACAO SOLID
-          "bg-primary-900 hover:bg-primary-hover text-primary-contrast": color === 'primary' && variant === 'solid',
-          "bg-secondary-700 hover:bg-secondary-hover text-secondary-contrast": color === 'secondary' && variant === 'solid',
-          "bg-default-700 hover:bg-default-hover text-white": color === 'default' && variant === 'solid',
+          "bg-primary-900 hover:bg-primary-hover text-primary-contrast disabled:opacity-30 disabled:cursor-not-allowed": color === 'primary' && variant === 'solid',
+          "bg-secondary-700 hover:bg-secondary-hover text-secondary-contrast disabled:opacity-30 disabled:cursor-not-allowed": color === 'secondary' && variant === 'solid',
+          "bg-default-700 hover:bg-default-hover text-white disabled:opacity-30 disabled:cursor-not-allowed": color === 'default' && variant === 'solid',
 
           // VARIACAO BORDER
-          "ring-1 ring-primary-900 text-primary-900 hover:ring-primary-hover": color === 'primary' && variant === 'border',
-          "ring-1 ring-secondary-700 text-secondary-700 hover:ring-secondary-hover": color === 'secondary' && variant === 'border',
-          "ring-1 ring-default-700 text-default-700 hover:ring-default-hover": color === 'default' && variant === 'border',
+          "ring-1 ring-primary-900 text-primary-900 hover:ring-primary-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'primary' && variant === 'border',
+          "ring-1 ring-secondary-700 text-secondary-700 hover:ring-secondary-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'secondary' && variant === 'border',
+          "ring-1 ring-default-700 text-default-700 hover:ring-default-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'default' && variant === 'border',
 
 
           // VARIACAO TEXT
-          "text-primary-900 hover:text-primary-hover": color === 'primary' && variant === 'text',
-          "text-secondary-700 hover:text-secondary-hover": color === 'secondary' && variant === 'text',
-          "text-default-700 hover:text-default-hover": color === 'default' && variant === 'text'
+          "text-primary-900 hover:text-primary-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'primary' && variant === 'text',
+          "text-secondary-700 hover:text-secondary-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'secondary' && variant === 'text',
+          "text-default-700 hover:text-default-hover disabled:opacity-30 disabled:cursor-not-allowed": color === 'default' && variant === 'text',
+
+          
         }
       )}
       {...props}
