@@ -26,10 +26,10 @@ function AlertRoot({
         "py-3 px-2 text-md": size === "md",
         "py-3 px-2 text-lg": size === "lg",
 
-        "bg-success-background text-success-color  [&>*]:text-success-color": type === "success",
-        "bg-warning-background text-warning-color [&>*]:text-warning-color": type === "warning",
-        "bg-danger-background text-danger-color [&>*]:text-danger-color": type === "danger",
-        "bg-info-background text-info-color [&>*]:text-info-color": type === "info",
+        "bg-success-background text-success-color ": type === "success",
+        "bg-warning-background text-warning-color": type === "warning",
+        "bg-danger-background text-danger-color": type === "danger",
+        "bg-info-background text-info-color": type === "info",
       })}
     >
       <div className="flex flex-row">
