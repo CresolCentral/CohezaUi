@@ -5,7 +5,7 @@ import { ButtonHTMLAttributes, HTMLProps, ReactNode } from "react";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
   children?: ReactNode;
   asChild?: boolean;
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl";
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   fullWidth?: boolean;
@@ -32,6 +32,7 @@ const Button = ({
       className={clsx(
         "flex items-center gap-2 justify-center rounded font-bold transition-colors ",
         {
+          "py-[1px] px-2 text-[0.7rem]": size === "xxs",
           "py-[2px] px-2 text-[0.8rem]": size === "xs",
           "py-[4px] px-2 text-[0.85rem]": size === "sm",
           "py-[8px] px-3 text-[0.875rem]": size === "md",
@@ -63,6 +64,7 @@ const Button = ({
       {leftIcon && <Slot className={clsx(
         "",
         {
+          "w-[0.6rem] h-[0.60rem]": size === "xxs",
           "w-[11px] h-[11px]": size === "xs" || size === "sm",
           "w-[0.82rem] h-[0.82rem]": size === "md",
           "w-[13px] h-[13px]": size === "lg" || size === "xl",
@@ -72,6 +74,7 @@ const Button = ({
       {rightIcon && <Slot className={clsx(
         "",
         {
+          "w-[0.6rem] h-[0.60rem]": size === "xxs",
           "w-[11px] h-[11px]": size === "xs" || size === "sm",
           "w-[0.82rem] h-[0.82rem]": size === "md",
           "w-[13px] h-[13px]": size === "lg" || size === "xl",

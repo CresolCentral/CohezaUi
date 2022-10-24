@@ -7,3 +7,4 @@ export { default as Heading } from "./Heading";
 export { default as IconButton } from "./IconButton";
 export { default as Text } from "./Text";
 export { default as TextField } from "./TextField";
+export { default as Span } from "./Span";

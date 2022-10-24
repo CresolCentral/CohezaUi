@@ -27,6 +27,8 @@ module.exports = {
         '100': '#E1E1E6',
         'hover': '#2D3644',
         'disabled': '#aaa',
+        'background': '#1c1c1c',
+        'color': '#bdbdbd',
       },
       primary: {
         'contrast': '#e0e0e0',

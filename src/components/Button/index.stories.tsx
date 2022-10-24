@@ -10,6 +10,7 @@ export default {
   args: {
     size: "sm",
     children: "Button",
+    variant: 'solid',
     fullWidth: true,
     color: 'primary',
     disabled: false,
@@ -36,7 +37,7 @@ export default {
       },
     },
     size: {
-      options: ["xs", "sm", "md", "lg", "xl"],
+      options: ["xxs", "xs", "sm", "md", "lg", "xl"],
       description: "Define o tamanho do botao",
       control: {
         type: "inline-radio",
