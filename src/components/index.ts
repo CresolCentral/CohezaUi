@@ -8,3 +8,4 @@ export { default as IconButton } from "./IconButton";
 export { default as Text } from "./Text";
 export { default as TextField } from "./TextField";
 export { default as Span } from "./Span";
+export { default as Chip } from "./Chip";

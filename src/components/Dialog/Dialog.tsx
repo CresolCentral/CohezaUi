@@ -12,6 +12,7 @@ export interface DialogProps {
   title?: string;
   description?: string;
   btnClose?: boolean;
+  overlay?: boolean;
 }
 
 const Dialog = ({
@@ -21,12 +22,15 @@ const Dialog = ({
   title,
   description,
   btnClose = true,
+  overlay = true
 }: DialogProps) => {
   return (
     <DialogPrimitive.Root open={open} onOpenChange={handleClose}>
       <DialogPrimitive.Trigger />
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="bg-black/90 inset-0 fixed z-10">
+        <DialogPrimitive.Overlay className={clsx(" inset-0 fixed z-10", {
+          "bg-black/90" : overlay === true
+        })}>
           <DialogPrimitive.Content
             className={clsx(
               "fixed bg-default-800 py-6 px-8 w-full rounded-md shadow-lg shadow-black/25  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",

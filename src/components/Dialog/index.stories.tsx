@@ -31,3 +31,16 @@ export const Default: Story<DialogProps> = (args) => {
     </>
   );
 };
+
+
+export const WithoutOverlay: Story<DialogProps> = (args) => {
+  const [, updateArgs] = useArgs();
+
+
+  return (
+    <>
+      <Button onClick={() => updateArgs({ open: true })}>Open Modal</Button>
+      <Dialog {...args} overlay={false}  handleClose={() => updateArgs({ open: false})} />
+    </>
+  );
+};
