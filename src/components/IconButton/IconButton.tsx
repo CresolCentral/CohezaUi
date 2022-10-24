@@ -1,8 +1,8 @@
 import { Slot } from "@radix-ui/react-slot";
 import { clsx } from "clsx";
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-export interface IconButtonProps {
+export interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   asChild?: boolean;
   size?: "xs" | "sm" | "md" | "lg";
@@ -15,7 +15,8 @@ const IconButton = ({
   asChild,
   size = "md",
   color = 'default',
-  variant = 'solid'
+  variant = 'solid',
+  ...props
 }: IconButtonProps) => {
   const Component = asChild ? Slot : "button";
 
@@ -45,6 +46,7 @@ const IconButton = ({
           "py-0 px-0 bg-transparent hover:text-default-hover text-default-700": color === 'default'  && variant === 'text',
         }
       )}
+      {...props}
     >
       {children}
     </Component>

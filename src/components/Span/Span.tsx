@@ -12,7 +12,7 @@ export interface SpanProps {
   icon?: boolean;
 }
 
-const Span = ({ children, type = "default", size = "md", icon }: SpanProps) => {
+const Span = ({ children, type = "default", size = "xs", icon }: SpanProps) => {
   return (
     <span className="flex">
       <div

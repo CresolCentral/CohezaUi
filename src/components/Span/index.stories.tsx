@@ -7,9 +7,8 @@ export default {
   component: Span,
   args: {
     children: 'Label',
-    size: 'md',
+    size: 'xs',
     type: 'success',
-    icon: true
   },
   argTypes: {
     size: {
@@ -30,3 +29,9 @@ export default {
 } as Meta<SpanProps>;
 
 export const Default: StoryObj<SpanProps> = {};
+
+export const SpanWithIcon: StoryObj<SpanProps> = {
+  args: {
+    icon: true,
+  }
+};
