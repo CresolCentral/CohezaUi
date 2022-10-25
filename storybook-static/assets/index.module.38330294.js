@@ -1,0 +1,2 @@
+var f=Object.defineProperty;var n=(e,t)=>f(e,"name",{value:t,configurable:!0});import{r as o}from"./index.d7b398fd.js";function r(e,t){typeof e=="function"?e(t):e!=null&&(e.current=t)}n(r,"$6ed0406888f73fc4$var$setRef");function a(...e){return t=>e.forEach(c=>r(c,t))}n(a,"$6ed0406888f73fc4$export$43e446d32b3d21af");function d(...e){return o.exports.useCallback(a(...e),e)}n(d,"$6ed0406888f73fc4$export$c7b2cbe3552a0d05");export{a as $,d as a};
+//# sourceMappingURL=index.module.38330294.js.map
