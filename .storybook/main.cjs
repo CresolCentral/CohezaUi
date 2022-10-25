@@ -17,7 +17,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/cohezaui/'
+      config.base = '/CohezaUi/'
     }
 
     return config
