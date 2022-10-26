@@ -1,4 +1,4 @@
-import { useToast } from "./context/Toast/ToastContext";
+import useToast from "./context/Toast/useToast";
 import "./styles/global.css";
 
 export function App() {

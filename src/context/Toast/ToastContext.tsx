@@ -13,13 +13,13 @@ import {
 export type AlertColor = "success" | "info" | "warning" | "danger" | "default";
 export type Position = 'bottom-left' | 'bottom-center' | 'bottom-right' | 'top-left' |	'top-center' |	'top-right'
 
-interface ToastProviderProps {
+export interface ToastProviderProps {
   children: React.ReactNode;
   position?: Position;
   duration?: number;
 }
 
-interface ToastContextData {
+export interface ToastContextData {
   showNotification: (type: AlertColor, message: string, title?: string) => void;
   position?: Position;
   duration?: number;
@@ -86,10 +86,6 @@ export const ToastProvider = ({ children, position = "top-center", duration}: To
       {children}
     </ToastContext.Provider>
   );
-};
-
-export const useToast = () => {
-  return useContext(ToastContext);
 };
 
 export default ToastProvider;

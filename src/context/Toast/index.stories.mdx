@@ -1,0 +1,33 @@
+<!-- Badge.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import  ToastProvider  from '.'
+
+<Meta title="Components/Toast" component={ToastProvider} />
+
+
+# Badge
+
+Para configurar o toast, é necessario implementar o `ToastProvider` no arquivo main ou app da aplicação.
+
+<Story
+  name="Default"
+  args={{
+    status: 'positive',
+    label: 'Positive'
+  }}>
+  {Template.bind({
+  })}
+</Story>
+
+<Canvas>
+  <Story 
+    name="warning"
+    args={{
+      status: 'warning',
+      label: 'Warning' 
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
