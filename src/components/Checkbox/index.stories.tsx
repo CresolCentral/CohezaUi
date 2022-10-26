@@ -5,7 +5,7 @@ import Text from "../Text";
 import { CheckboxProps } from './Checkbox';
 
 export default {
-  title: "Components/Checkbox",
+  title: "Form/Checkbox",
   component: Checkbox,
   args: {
     size: 'sm'

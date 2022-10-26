@@ -4,7 +4,7 @@ import Text from ".";
 import { TextProps } from './Text';
 
 export default {
-  title: 'Components/Text',
+  title: 'Form/Text',
   component: Text,
   args: {
     children: 'Lorem ipsum.',

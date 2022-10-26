@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { ButtonProps } from "./Button";
 
 export default {
-  title: "Components/Button",
+  title: "Form/Button",
   component: Button,
   args: {
     size: "sm",

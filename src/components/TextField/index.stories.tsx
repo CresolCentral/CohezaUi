@@ -2,22 +2,27 @@ import React from 'react'
 import { Meta, StoryObj } from "@storybook/react";
 import TextField from ".";
 import { FaUserAlt } from "react-icons/fa";
-import { InputRootProps } from "./TextField";
+import { TextFieldProps } from './TextField';
 
 export default {
-  title: "Components/TextField",
-  component: TextField.Root,
+  title: "Form/TextField",
+  component: TextField,
   args: {
-    children: [
-      <TextField.Icon>
-        <FaUserAlt />
-      </TextField.Icon>,
-      <TextField.Text placeholder="Placeholder input" />,
-    ],
-    size: "md"
+    size: "md",
+    placeholder: 'My input placeholder'
   },
   argTypes: {
     children: {
+      table: {
+        disable: true,
+      },
+    },
+    icon: {
+      table: {
+        disable: true,
+      },
+    },
+    label: {
       table: {
         disable: true,
       },
@@ -29,26 +34,29 @@ export default {
       },
     },
   },
-} as Meta<InputRootProps>;
+} as Meta<TextFieldProps>;
 
-export const Default: StoryObj<InputRootProps> = {};
+export const Default: StoryObj<TextFieldProps> = {};
 
-export const WithLabel: StoryObj<InputRootProps> = {
+export const WithLabel: StoryObj<TextFieldProps> = {
   args: {
-    children: [
-      <TextField.Text placeholder="Placeholder input" />,
-    ],
     label: 'My Label',
-    size: "md"
+    size: "md",
   },
 };
 
-export const WithoutIcon: StoryObj<InputRootProps> = {
+export const WithoutIcon: StoryObj<TextFieldProps> = {
   args: {
-    children: [
-      <TextField.Text placeholder="Placeholder input" />,
-    ],
-    size: "md"
+    size: "md",
+    icon: <FaUserAlt />
   },
 };
+
+
+export const Disabled: StoryObj<TextFieldProps> = {
+  args: {
+    disabled: true
+  },
+};
+
 

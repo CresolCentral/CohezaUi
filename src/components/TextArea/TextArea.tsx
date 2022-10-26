@@ -3,21 +3,19 @@ import clsx from "clsx";
 import React from "react";
 import { ReactElement } from "react";
 
-type A = React.InputHTMLAttributes<HTMLInputElement>;
+type A = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export type TextFieldProps = {
+export type TextAreaProps = {
   label?: string;
-  size?: "sm" | "md" | "lg";
   icon?: ReactElement;
 } & Omit<A, "size">;
 
-const TextField = ({
+const TextArea = ({
   label,
-  size = "md",
   disabled = false,
   icon,
   ...props
-}: TextFieldProps) => {
+}: TextAreaProps) => {
   return (
     <div className="flex flex-col">
       {label && (
@@ -27,15 +25,12 @@ const TextField = ({
       )}
       <div
         className={clsx(
-          "flex items-center gap-3 rounded bg-input-bg focus-within:ring-2 ring-primary-900 text-primary-contrast  placeholder:text-default-400", {
+          "flex justify-start items-start gap-1 rounded pt-2 bg-input-bg focus-within:ring-2 ring-primary-900 text-primary-contrast  placeholder:text-default-400", {
             "opacity-50 cursor-not-allowed": disabled,
           })}
       >
-        {!!icon && <Slot className="w-[14px] ml-3 flex h-[14px] text-default-400">{icon}</Slot>}
-        <input className={clsx("outline-none bg-input-bg flex flex-1 rounded px-2", {
-          "h-9 text-sm": size === "sm",
-          "h-10": size === "md",
-          "h-12": size === "lg",
+        {!!icon && <Slot className="w-[14px] ml-3 mt-1 flex h-[14px] text-default-400">{icon}</Slot>}
+        <textarea className={clsx("outline-none bg-input-bg flex flex-1 rounded px-2",{
           "opacity-50 cursor-not-allowed": disabled,
         })} {...props} disabled={disabled} />
       </div>
@@ -43,4 +38,4 @@ const TextField = ({
   );
 };
 
-export default TextField;
+export default TextArea;

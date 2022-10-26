@@ -5,7 +5,7 @@ import SelectItem from "../SelectItem";
 import { SelectProps } from './Select';
 
 export default {
-  title: 'Components/Select',
+  title: 'Form/Select',
   component: Select,
   args: {
     children: [

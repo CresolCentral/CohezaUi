@@ -6,7 +6,7 @@ import { ButtonGroupProps } from "./ButtonGroup";
 import { FaAdjust, FaAmbulance, FaAvianex } from 'react-icons/fa'
 
 export default {
-  title: "Components/ButtonGroup",
+  title: "Form/ButtonGroup",
   component: ButtonGroup,
   args: {
     children: [

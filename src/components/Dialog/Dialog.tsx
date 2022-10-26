@@ -4,6 +4,7 @@ import Button from "../Button";
 import Heading  from "../Heading";
 import  Text  from "../Text";
 import { IoClose } from "react-icons/io5";
+import { ReactNode } from "react";
 
 export interface DialogProps {
   open: boolean;
@@ -13,6 +14,7 @@ export interface DialogProps {
   description?: string;
   btnClose?: boolean;
   overlay?: boolean;
+  children: ReactNode
 }
 
 const Dialog = ({
@@ -22,7 +24,7 @@ const Dialog = ({
   title,
   description,
   btnClose = true,
-  overlay = true
+  overlay = true,
 }: DialogProps) => {
   return (
     <DialogPrimitive.Root open={open} onOpenChange={handleClose}>
