@@ -15,4 +15,3 @@ export { default as TextArea } from "./TextArea";
 export { default as ButtonGroup } from "./ButtonGroup";
 export { default as MultiStep } from "./MultiStep";
 export { default as Select } from "./Select";
-export { default as Toast } from "./Toast";

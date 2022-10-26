@@ -91,3 +91,5 @@ export const ToastProvider = ({ children, position = "top-center", duration}: To
 export const useToast = () => {
   return useContext(ToastContext);
 };
+
+export default ToastProvider;
