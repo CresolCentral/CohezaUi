@@ -1,7 +1,7 @@
 {
   "name": "coheza-ui",
   "private": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "prepublish": "tsc",
   "files": [
     "dist",

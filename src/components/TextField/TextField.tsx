@@ -33,9 +33,9 @@ const TextField = ({
       >
         {!!icon && <Slot className="w-[14px] ml-3 flex h-[14px] text-default-400">{icon}</Slot>}
         <input className={clsx("outline-none bg-input-bg flex flex-1 rounded px-2", {
-          "h-9 text-[0.875rem]": size === "sm",
-          "h-10 text-[0.875rem]": size === "md",
-          "h-12 text-[0.875rem]": size === "lg",
+          "h-9 text-sm": size === "sm",
+          "h-10 text-sm": size === "md",
+          "h-12 text-sm": size === "lg",
           "opacity-50 cursor-not-allowed": disabled,
         })} {...props} disabled={disabled} />
       </div>
