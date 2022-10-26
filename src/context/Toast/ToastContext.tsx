@@ -34,7 +34,7 @@ export const ToastProvider = ({ children, position = "top-center", duration}: To
     toastPrimitive.custom((t) => (
       <div
         className={clsx(
-          "flex flex-row gap-2 w-96 bg-gray-900 px-2 py-1 shadow-sm hover:shadow-none transform-gpu translate-y-0 hover:translate-y-1 rounded relative transition-all duration-500 ease-in-out",
+          "flex flex-row gap-2 w-96 bg-gray-900 px-2 py-3 shadow-sm hover:shadow-none transform-gpu translate-y-0 hover:translate-y-1 rounded relative transition-all duration-500 ease-in-out",
           {
             "right-0": t.visible === true && (position === 'bottom-right' || position === 'top-right'),
             "-right-[410px]": t.visible === false  && (position === 'bottom-right' || position === 'top-right'),
