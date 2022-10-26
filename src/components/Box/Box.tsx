@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-export interface BoxProps {
+export interface BoxProps extends HTMLAttributes<HTMLDivElement>{
   children: ReactNode
 } 
 
-const Box =({ children }: BoxProps) => {
+const Box =({ children, ...props }: BoxProps) => {
   return (
-    <div className="p-4 rounded-md bg-default-800">{children}</div>
+    <div className="p-4 rounded-md bg-default-800" {...props}>{children}</div>
   )
 }
 
