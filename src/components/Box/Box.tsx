@@ -1,12 +1,13 @@
 import { HTMLAttributes, ReactNode } from "react";
 
 export interface BoxProps extends HTMLAttributes<HTMLDivElement>{
-  children: ReactNode
+  children: ReactNode;
+  className: string;
 } 
 
-const Box =({ children, ...props }: BoxProps) => {
+const Box =({ children, className, ...props }: BoxProps) => {
   return (
-    <div className="p-4 rounded-md bg-default-800" {...props}>{children}</div>
+    <div className={`p-4 rounded bg-default-800 ${!!className && className}`} {...props}>{children}</div>
   )
 }
 
