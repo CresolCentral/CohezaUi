@@ -56,17 +56,17 @@ export const ToastProvider = ({ children, position = "top-center", duration}: To
           }
         )}
       >
-        <div className="mt-1 flex">
+        <div className="flex items-start">
           {type === "success" && <FaCheckCircle className="w-5 h-5" />}
           {type === "warning" && <FaExclamationCircle className="w-5 h-5" />}
           {type === "danger" && <FaTimesCircle className="w-5 h-5" />}
           {type === "info" && <FaInfoCircle className="w-5 h-5" />}
           {type === "default" && <FaQuestionCircle className="w-5 h-5" />}
         </div>
-        <div className="flex justify-between  w-full">
+        <div className="flex justify-between w-full">
           <div className="flex flex-col">
             {!!title && <span className="text-xs font-bold">{title}</span>}
-            <span className="text-xs">{message}</span>
+            <span className="text-sm">{message}</span>
           </div>
           <button
             className="w-3 h-3"

@@ -23,10 +23,10 @@ const Span = ({ children, type = "default", size = "xs", icon }: SpanProps) => {
           "bg-danger-background text-danger-color": type === "danger",
           "bg-default-background text-default-color": type === "default",
 
-          "px-2 py-[1px] text-[0.85rem]": size === "xs",
-          "px-2 py-[2px] text-[0.9rem]": size === "sm",
-          "px-2 py-[3px] text-sm": size === "md",
-          "px-3 py-[3px] text-md": size === "lg",
+          "px-2 text-xxs h-5": size === "xs",
+          "px-2 text-xs h-6": size === "sm",
+          "px-2 text-sm h-8": size === "md",
+          "px-3 text-md h-10": size === "lg",
         })}
       >
         {icon && type === "success" && <BsCheckAll />}

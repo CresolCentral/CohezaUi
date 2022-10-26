@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 import { ReactNode } from 'react';
 
 export interface HeadingProps {
-  size?: "xs" | "sm" | "md" | "lg";
+  size?: "xxs" | "xs" | "sm" | "md" | "lg";
   children?: ReactNode;
   asChild?: boolean;
 }
@@ -15,6 +15,7 @@ const Heading = ({ size = "md", children, asChild }: HeadingProps) => {
   return (
     <Component
       className={clsx("text-label font-bold font-sans", {
+        "text-sm": size === "xxs",
         "text-md": size === "xs",
         "text-lg": size === "sm",
         "text-xl": size === "md",

@@ -5,7 +5,7 @@ import { ToastProvider } from "./context/Toast/ToastContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ToastProvider position="bottom-left" duration={3000}>
+    <ToastProvider position="top-center" duration={10000}>
       <App />
     </ToastProvider>
   </React.StrictMode>

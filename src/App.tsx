@@ -6,6 +6,6 @@ export function App() {
   const { showNotification } = useToast();
   
   return (
-    <button onClick={() => showNotification('success', 'Efetuado com sucesso', "Sucesso")}>Make me a toast</button>
+    <button onClick={() => showNotification('success', 'Efetuado com sucesso')}>Make me a toast</button>
   );
 }

@@ -27,7 +27,7 @@ const TextField = ({
       )}
       <div
         className={clsx(
-          "flex items-center gap-3 rounded bg-input-bg focus-within:ring-2 ring-primary-900 text-primary-contrast  placeholder:text-default-400", {
+          "flex items-center rounded bg-input-bg focus-within:ring-2 ring-primary-900 text-primary-contrast  placeholder:text-default-400", {
             "opacity-50 cursor-not-allowed": disabled,
           })}
       >
