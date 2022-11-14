@@ -59,4 +59,11 @@ export const Disabled: StoryObj<TextFieldProps> = {
   },
 };
 
+export const Error: StoryObj<TextFieldProps> = {
+  args: {
+    helperText: 'Campo Obrigatório',
+    error: true,
+  },
+};
+
 
